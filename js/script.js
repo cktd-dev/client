@@ -114,7 +114,7 @@ document.addEventListener('DOMContentLoaded', function() {
         submitBtn.disabled = true;
 
         try {
-            const response = await fetch('http://localhost:3000/create-order', {
+            const response = await fetch('https://backend-gc6a.onrender.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     async function verifyPayment(paymentResponse, formData) {
         try {
-            const response = await fetch('http://localhost:3000/verify-payment', {
+            const response = await fetch('https://backend-gc6a.onrender.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
